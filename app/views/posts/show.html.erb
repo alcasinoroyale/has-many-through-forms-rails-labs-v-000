@@ -5,7 +5,7 @@
     Category: <%= category.name %>
   <% end %>
   <%= @post.comments.each do |comment| %>
-  <%= comment.user.username %> posts: <%= comment.content %>
+  <%= comment.user.username %> writes: <%= comment.content %>
 </div>
 
 
