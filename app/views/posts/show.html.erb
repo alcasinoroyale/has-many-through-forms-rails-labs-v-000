@@ -1,7 +1,10 @@
 <div class=post-content>
-  <%= @post.title %>
+  Title: <%= @post.title %>
   Content: <%= @post.content %><br>
+  <% @post.categories.each do |category| %> 
 </div>
+
+
 <%= form_for post do |f| %>
   <%= f.label "Title" %>
   <%= f.text_field :title %>
