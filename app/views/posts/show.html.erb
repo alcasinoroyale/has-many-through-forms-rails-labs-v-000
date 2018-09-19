@@ -2,6 +2,8 @@
   Title: <%= @post.title %>
   Content: <%= @post.content %><br>
   <% @post.categories.each do |category| %> 
+  Category: <%= category.name %>
+  <% end %>
 </div>
 
 
