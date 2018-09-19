@@ -7,7 +7,7 @@
   <% end %>
 
   <%= @post.comments.each do |comment| %>
-    <%= comment.user.username %> writes: <%= comment.content %>
+    <%= comment.user.username %> says: <%= comment.content %>
   <% end %>
 
   <% @post.users.uniq.each do |user| %>
