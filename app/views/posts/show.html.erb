@@ -6,6 +6,7 @@
   <% end %>
   <%= @post.comments.each do |comment| %>
   <%= comment.user.username %> writes: <%= comment.content %>
+  <% end %>
 </div>
 
 
