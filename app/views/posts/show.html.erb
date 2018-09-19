@@ -16,8 +16,7 @@
   
 </div>
 
-
-<%= form_for post do |f| %>
+<%= form_for @post.comments.build do |f| %>
   <%= f.label "Title" %>
   <%= f.text_field :title %>
   <%= f.label "Content" %>
